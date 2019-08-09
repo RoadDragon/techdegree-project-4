@@ -312,8 +312,34 @@ select {
 * {
   box-sizing: border-box; }
 
+body {
+  margin: 1em;
+  padding: 1em;
+  text-align: center;
+  font-family: "Gothic A1", sans-serif; }
+
 .container {
-  text-align: center; }
+  margin: 0 auto; }
+
+ul {
+  padding: 0; }
+
+ul li {
+  margin: 15px 0;
+  border-radius: 5px; }
+
+.nav__item {
+  list-style: none;
+  padding: 10px;
+  width: 100%;
+  background-color: #ffffff;
+  font-size: .8em; }
+  .nav__item:first-child {
+    background-color: #58E1C1;
+    color: #ffffff; }
+  .nav__item a {
+    text-decoration: none;
+    color: #B3B3B3; }
 
 .grid__row {
   padding: 1em 10px;
