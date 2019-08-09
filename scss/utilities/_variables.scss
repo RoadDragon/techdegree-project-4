@@ -7,9 +7,8 @@ $font-secondary: 'Lora', serif;
 
 // ----------------- BREAKPOINTS ---------------------
 
-
-
-
+$break-med: 480px;
+$break-lg: 1400px;
 
 
 // -------------------- COLORS -----------------------
@@ -20,6 +19,10 @@ $color-success: #63CC82;
 $color-error: #E4747A;
 $color-warning: #FD7756;
 $color-info: #927BC1;
+
+$color-primary-text: #B3B3B3;
+$color-grid-text: #808181;
+$color-form-text: #757575;
 
 $color-12-col: #80E8D1;
 $color-6-col: #3FABCA;
