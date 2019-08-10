@@ -2,3 +2,23 @@
     font-weight: 300;
     text-align: left;
 }
+.headline--primary {
+    text-align: left;
+    color: $color-secondary;
+    margin-left: 20px;
+}
+.link {
+    color: $color-default;
+    text-decoration: none;
+    font-weight: bold;
+}
+.blockquote {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 0px;
+    padding-left: 20px;
+    border-left: 7px solid $color-secondary;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-style: italic;
+}

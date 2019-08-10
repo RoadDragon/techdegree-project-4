@@ -316,7 +316,8 @@ body {
   margin: 1em;
   padding: 2em;
   text-align: center;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  color: #757575; }
 
 .container {
   margin: 0 auto; }
@@ -329,7 +330,6 @@ ul li {
   border-radius: 5px; }
 
 P {
-  color: #757575;
   line-height: 1.7; }
 
 .grid__row {
@@ -449,5 +449,25 @@ P {
 .headline--secondary {
   font-weight: 300;
   text-align: left; }
+
+.headline--primary {
+  text-align: left;
+  color: #58E1C1;
+  margin-left: 20px; }
+
+.link {
+  color: #51DDFC;
+  text-decoration: none;
+  font-weight: bold; }
+
+.blockquote {
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 0px;
+  padding-left: 20px;
+  border-left: 7px solid #58E1C1;
+  border-radius: 5px;
+  font-size: 1.5em;
+  font-style: italic; }
 
 /*# sourceMappingURL=styles.css.map */

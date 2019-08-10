@@ -14,6 +14,7 @@ body {
      padding: 2em;
      text-align: center;
      font-family: $font-primary;
+     color: $color-primary-text;
 }
 
 //might need to remove this...
@@ -29,7 +30,6 @@ ul li {
         border-radius: 5px;        
 }
 P {
-    color: $color-primary-text;
     line-height: 1.7;
 }
 
