@@ -313,14 +313,12 @@ select {
   box-sizing: border-box; }
 
 body {
-  margin: 1em;
-  padding: 2em;
-  text-align: center;
   font-family: "Open Sans", sans-serif;
-  color: #757575; }
+  color: #757575;
+  margin: 2em; }
 
 .container {
-  margin: 0 auto; }
+  text-align: center; }
 
 ul {
   padding: 0; }
@@ -330,7 +328,8 @@ ul li {
   border-radius: 5px; }
 
 P {
-  line-height: 1.7; }
+  line-height: 1.7;
+  text-align: left; }
 
 .grid__row {
   padding: 1em 10px;
@@ -434,8 +433,7 @@ P {
   width: 100%;
   background-color: #ffffff;
   font-size: 1em;
-  color: #757575;
-  font-family: #58E1C1; }
+  color: #757575; }
   .nav__item a {
     text-decoration: none;
     color: inherit;
@@ -469,5 +467,14 @@ P {
   border-radius: 5px;
   font-size: 1.5em;
   font-style: italic; }
+
+.img--avatar {
+  margin: 25px auto;
+  display: block; }
+
+.form__label--hidden,
+.form__input {
+  display: flex;
+  width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */

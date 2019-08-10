@@ -10,17 +10,24 @@
 }
 
 body {
-     margin: 1em;
-     padding: 2em;
-     text-align: center;
      font-family: $font-primary;
      color: $color-primary-text;
+    //       display: flex;
+    //       flex-wrap: wrap;
+    //  justify-content: center;
+    //  flex-grow: 1;
+     margin: 2em;
+    //  padding: 0;
+    //  width: 100%;
+
 }
 
 //might need to remove this...
 .container {
-      margin: 0 auto;
+    // margin: 0 auto;
+    text-align: center;
 }
+
 ul {
     padding: 0;
 }
@@ -31,6 +38,7 @@ ul li {
 }
 P {
     line-height: 1.7;
+    text-align: left;
 }
 
 
