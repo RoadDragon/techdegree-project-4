@@ -5,3 +5,12 @@
     display: flex;
     width: 100%;
 }
+.form__label--hidden {
+    display: none;
+}
+.form__input {
+    border: none;
+    border-bottom: $border;
+    margin: 2em;
+    padding: .5em; 
+}

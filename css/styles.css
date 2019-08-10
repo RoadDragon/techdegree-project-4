@@ -477,4 +477,13 @@ P {
   display: flex;
   width: 100%; }
 
+.form__label--hidden {
+  display: none; }
+
+.form__input {
+  border: none;
+  border-bottom: 7px solid #58E1C1;
+  margin: 2em;
+  padding: .5em; }
+
 /*# sourceMappingURL=styles.css.map */
