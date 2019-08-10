@@ -314,9 +314,9 @@ select {
 
 body {
   margin: 1em;
-  padding: 1em;
+  padding: 2em;
   text-align: center;
-  font-family: "Gothic A1", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 .container {
   margin: 0 auto; }
@@ -328,18 +328,9 @@ ul li {
   margin: 15px 0;
   border-radius: 5px; }
 
-.nav__item {
-  list-style: none;
-  padding: 10px;
-  width: 100%;
-  background-color: #ffffff;
-  font-size: .8em; }
-  .nav__item:first-child {
-    background-color: #58E1C1;
-    color: #ffffff; }
-  .nav__item a {
-    text-decoration: none;
-    color: #B3B3B3; }
+P {
+  color: #757575;
+  line-height: 1.7; }
 
 .grid__row {
   padding: 1em 10px;
@@ -436,5 +427,27 @@ ul li {
 @media (min-width: 768px) {
   [class^=grid__col] + [class^=grid__col] {
     margin-left: 10px; } }
+
+.nav__item {
+  list-style: none;
+  padding: 10px;
+  width: 100%;
+  background-color: #ffffff;
+  font-size: 1em;
+  color: #757575;
+  font-family: #58E1C1; }
+  .nav__item a {
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 15px;
+    display: block; }
+  .nav__item:hover, .nav__item:first-child {
+    color: white;
+    background-color: #58E1C1;
+    width: 100%; }
+
+.headline--secondary {
+  font-weight: 300;
+  text-align: left; }
 
 /*# sourceMappingURL=styles.css.map */
