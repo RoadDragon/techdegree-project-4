@@ -479,7 +479,7 @@ P {
 .form__label--hidden,
 .form__input {
   display: flex;
-  width: 100%; }
+  width: 90%; }
 
 .form__label--hidden {
   display: none; }
@@ -487,7 +487,40 @@ P {
 .form__input {
   border: none;
   border-bottom: 7px solid #58E1C1;
-  margin: 2em;
+  margin: 2em auto;
   padding: .5em; }
+
+.theme__colors {
+  width: 100%;
+  background-color: #ffffff;
+  font-size: .9em;
+  padding: 15px 0;
+  margin: .9em auto;
+  background: tomato;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-style: 700;
+  font-family: "Gothic A1", sans-serif; }
+
+.btn--default {
+  background: #51DDFC;
+  text-transform: uppercase; }
+
+.btn--success {
+  background: #63CC82;
+  text-transform: uppercase; }
+
+.btn--error {
+  background: #E4747A;
+  text-transform: uppercase; }
+
+.btn--warning {
+  background: #FD7756;
+  text-transform: uppercase; }
+
+.btn--info {
+  background: #927BC1;
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=styles.css.map */

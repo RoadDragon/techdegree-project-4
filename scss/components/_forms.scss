@@ -3,7 +3,7 @@
 .form__label--hidden,
 .form__input {
     display: flex;
-    width: 100%;
+    width: 90%;
 }
 .form__label--hidden {
     display: none;
@@ -11,6 +11,6 @@
 .form__input {
     border: none;
     border-bottom: $border;
-    margin: 2em;
+    margin: 2em auto;
     padding: .5em; 
 }
