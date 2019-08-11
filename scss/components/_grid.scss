@@ -15,6 +15,7 @@
     padding: 1em 0;
     display: flex;
     flex-direction: column;
+    
 
     // NOTE: replace with media query mixin if aiming for exceeds
     @media (min-width: 768px) {
@@ -24,7 +25,6 @@
 
   // .grid__col
   &__col {
-    
     // create grid columns dynamically
     // loop through each column size
     @for $i from 1 through 12 {
@@ -32,13 +32,14 @@
       // concatenate CSS selector, ie when $i = 1,
       // selector would be .grid__col--1
       &--#{$i} {
-
+        @include theme__colors;
+        background: tomato;
         // base styles applied to all grid columns 
         // NOTE: could be converted to a placeholder, along with margin
         // from the  media query
         margin-top: 10px;
         flex-basis: 100%;
-
+          
         // NOTE: replace with media query mixin if aiming for exceeds
         @media (min-width: 768px) {
 

@@ -1,39 +1,44 @@
 
 
-.theme__colors {
-    width: 100%;
-    background-color: $white;
-    font-size: .9em;
-    padding: 15px 0;
-    margin: .9em auto;
-    background: tomato;
-    border-radius: 5px;
-    border: none;
-    text-align: left;
-    font-style: 700;
-    font-family: $font-secondary;
-}
+// .theme__colors {
+//     width: 100%;
+//     font-size: .9em;
+//     padding: 15px;
+//     border-radius: 5px;
+//     border: none;
+//     text-align: left;
+// }
 
 .btn--default {
-    background: $color-default;
-    @include btn;
+    @include theme__colors;
+    @include btn {
+        background: $color-default;
+    }
 }
 
 .btn--success {
-    background: $color-success;
-    @include btn;
+    @include theme__colors;
+    @include btn {
+        background: $color-success;
+    }
 }
 
 .btn--error {
-    background: $color-error;
-    @include btn;
+    @include theme__colors;
+    @include btn {
+        background: $color-error;
+    }
 }
 .btn--warning {
-    background: $color-warning;
-    @include btn;
+    @include theme__colors;
+    @include btn {
+        background: $color-warning;
+    }
 }
 
 .btn--info {
-    background: $color-info;
-    @include btn;
+    @include theme__colors;
+    @include btn {
+        background: $color-info;
+    }
 }
