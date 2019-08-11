@@ -9,33 +9,31 @@
     background: tomato;
     border-radius: 5px;
     border: none;
-
-    color: white;
+    text-align: left;
     font-style: 700;
     font-family: $font-secondary;
 }
 
 .btn--default {
     background: $color-default;
-    text-transform: uppercase;
+    @include btn;
 }
 
 .btn--success {
     background: $color-success;
-    text-transform: uppercase;
+    @include btn;
 }
 
 .btn--error {
     background: $color-error;
-    text-transform: uppercase;
+    @include btn;
 }
-
 .btn--warning {
     background: $color-warning;
-    text-transform: uppercase;
+    @include btn;
 }
 
 .btn--info {
     background: $color-info;
-    text-transform: uppercase;
+    @include btn;
 }
