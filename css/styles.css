@@ -445,7 +445,7 @@ P {
     width: 100%; }
 
 .headline--secondary {
-  font-weight: 300;
+  font-weight: 200;
   text-align: left; }
 
 .headline--primary {
@@ -465,12 +465,16 @@ P {
   padding-left: 20px;
   border-left: 7px solid #58E1C1;
   border-radius: 5px;
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-style: italic; }
 
 .img--avatar {
   margin: 25px auto;
-  display: block; }
+  display: flex; }
+
+.img--frame {
+  border: .5px solid lightgrey;
+  padding: 15px; }
 
 .form__label--hidden,
 .form__input {
