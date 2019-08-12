@@ -1,11 +1,17 @@
 // ----------------- IMAGE STYLES ---------------------
 
-.img--avatar {
+.img {
+    &--avatar {
     margin: 25px auto;
     display: flex;
-}
-
-.img--frame {
+    }
+    &--frame {
     border: .5px solid lightgrey;
     padding: 15px;
+    width: 100%;
+    }
+    &--logo {
+        margin: 25px auto;
+    }
 }
+

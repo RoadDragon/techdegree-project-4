@@ -51,27 +51,35 @@
           flex-basis: #{$i / 12 * 100 + "%"} ;
         }
       }
-      &--3.theme__colors {
-        background-color: $color-3-col;
+      @each $grid-number, $bgcolor in $grid-colors {
+          &--#{$grid-number}.theme__colors {
+            background-color: $bgcolor;
+          }
       }
-      &--4.theme__colors {
-        background-color: $color-4-col;
-      }
-      &--5.theme__colors {
-        background-color: $color-5-col;
-      }
-      &--6.theme__colors {
-        background-color: $color-6-col;
-      }
-      &--7.theme__colors {
-        background-color: $color-7-col;
-      }
-      &--8.theme__colors {
-        background-color: $color-8-col;
-      }
-      &--12.theme__colors {
-        background-color: $color-12-col;
-      }
+
+
+//this was manually coded. I am leaving in so that you can see my process but managed to do it with an @each loop following this video: https://teamtreehouse.com/library/loop-through-data-in-a-map-with-each.
+      // &--3.theme__colors {
+      //   background-color: $color-3-col;
+      // }
+      // &--4.theme__colors {
+      //   background-color: $color-4-col;
+      // }
+      // &--5.theme__colors {
+      //   background-color: $color-5-col;
+      // }
+      // &--6.theme__colors {
+      //   background-color: $color-6-col;
+      // }
+      // &--7.theme__colors {
+      //   background-color: $color-7-col;
+      // }
+      // &--8.theme__colors {
+      //   background-color: $color-8-col;
+      // }
+      // &--12.theme__colors {
+      //   background-color: $color-12-col;
+      // }
     }
   }
 }

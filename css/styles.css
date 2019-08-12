@@ -324,7 +324,6 @@ ul {
   padding: 0; }
 
 ul li {
-  margin: 15px 0;
   border-radius: 5px; }
 
 P {
@@ -692,7 +691,8 @@ P {
   text-align: left;
   color: #58E1C1;
   margin-left: 20px;
-  font-size: 1.8em; }
+  font-size: 1.8em;
+  width: 90%; }
 
 .link {
   color: #51DDFC;
@@ -702,7 +702,7 @@ P {
 .blockquote {
   text-align: left;
   margin-left: 20px;
-  margin-right: 0px;
+  width: 90%;
   padding-left: 20px;
   border-left: 7px solid #58E1C1;
   border-radius: 5px;
@@ -712,10 +712,12 @@ P {
 .img--avatar {
   margin: 25px auto;
   display: flex; }
-
 .img--frame {
   border: .5px solid lightgrey;
-  padding: 15px; }
+  padding: 15px;
+  width: 100%; }
+.img--logo {
+  margin: 25px auto; }
 
 .form__label--hidden,
 .form__input {
@@ -728,7 +730,7 @@ P {
 .form__input {
   border: none;
   border-bottom: 7px solid #58E1C1;
-  margin: 2em auto;
+  margin: 2em auto 1em;
   padding: .5em; }
 
 .btn--default {
