@@ -3,6 +3,9 @@
 .headline--secondary {
     font-weight: 200;
     text-align: left;
+    @media (min-width: $break-m) {
+        margin-top: 0;
+    }
 }
 .headline--primary {
     text-align: left;

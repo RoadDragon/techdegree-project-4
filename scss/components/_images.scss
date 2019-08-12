@@ -12,6 +12,10 @@
     }
     &--logo {
         margin: 25px auto;
+        @media (min-width: $break-m) {
+            margin: 0 auto 0 1em;
+            
+        }
     }
 }
 
