@@ -361,6 +361,11 @@ p {
   flex-basis: 100%; }
   @media (min-width: 768px) {
     .grid__col--1 {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1; } }
+  @media (min-width: 768px) {
+    .grid__col--1 {
       margin-top: 0;
       flex-direction: row;
       flex-basis: 8.3333333333%; } }
@@ -373,6 +378,11 @@ p {
   text-align: left;
   margin-top: 10px;
   flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--2 {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1; } }
   @media (min-width: 768px) {
     .grid__col--2 {
       margin-top: 0;
@@ -389,6 +399,11 @@ p {
   flex-basis: 100%; }
   @media (min-width: 768px) {
     .grid__col--3 {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1; } }
+  @media (min-width: 768px) {
+    .grid__col--3 {
       margin-top: 0;
       flex-direction: row;
       flex-basis: 25%; } }
@@ -401,6 +416,11 @@ p {
   text-align: left;
   margin-top: 10px;
   flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--4 {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1; } }
   @media (min-width: 768px) {
     .grid__col--4 {
       margin-top: 0;
@@ -417,6 +437,11 @@ p {
   flex-basis: 100%; }
   @media (min-width: 768px) {
     .grid__col--5 {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1; } }
+  @media (min-width: 768px) {
+    .grid__col--5 {
       margin-top: 0;
       flex-direction: row;
       flex-basis: 41.6666666667%; } }
@@ -429,6 +454,11 @@ p {
   text-align: left;
   margin-top: 10px;
   flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--6 {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1; } }
   @media (min-width: 768px) {
     .grid__col--6 {
       margin-top: 0;
@@ -445,6 +475,11 @@ p {
   flex-basis: 100%; }
   @media (min-width: 768px) {
     .grid__col--7 {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1; } }
+  @media (min-width: 768px) {
+    .grid__col--7 {
       margin-top: 0;
       flex-direction: row;
       flex-basis: 58.3333333333%; } }
@@ -457,6 +492,11 @@ p {
   text-align: left;
   margin-top: 10px;
   flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--8 {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1; } }
   @media (min-width: 768px) {
     .grid__col--8 {
       margin-top: 0;
@@ -473,6 +513,11 @@ p {
   flex-basis: 100%; }
   @media (min-width: 768px) {
     .grid__col--9 {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1; } }
+  @media (min-width: 768px) {
+    .grid__col--9 {
       margin-top: 0;
       flex-direction: row;
       flex-basis: 75%; } }
@@ -485,6 +530,11 @@ p {
   text-align: left;
   margin-top: 10px;
   flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--10 {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1; } }
   @media (min-width: 768px) {
     .grid__col--10 {
       margin-top: 0;
@@ -501,6 +551,11 @@ p {
   flex-basis: 100%; }
   @media (min-width: 768px) {
     .grid__col--11 {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1; } }
+  @media (min-width: 768px) {
+    .grid__col--11 {
       margin-top: 0;
       flex-direction: row;
       flex-basis: 91.6666666667%; } }
@@ -513,6 +568,11 @@ p {
   text-align: left;
   margin-top: 10px;
   flex-basis: 100%; }
+  @media (min-width: 768px) {
+    .grid__col--12 {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1; } }
   @media (min-width: 768px) {
     .grid__col--12 {
       margin-top: 0;
@@ -555,6 +615,11 @@ p {
     background-color: #58E1C1;
     width: 100%; }
 
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: right; } }
+
 .headline--secondary {
   font-weight: 200;
   text-align: left; }
@@ -589,17 +654,22 @@ p {
   display: flex; }
   @media (min-width: 768px) {
     .img--avatar {
-      width: 50%;
+      width: 80%;
       margin: 15px auto; } }
 .img--frame {
   border: .5px solid lightgrey;
   padding: 15px;
   width: 100%; }
 .img--logo {
-  margin: 25px auto; }
+  margin: 25px auto;
+  text-align: center;
+  display: block; }
   @media (min-width: 768px) {
     .img--logo {
-      margin: 0 auto 0 1em; } }
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: auto;
+      display: flex; } }
 
 .form__label--hidden, .form__input {
   display: flex;
@@ -614,6 +684,12 @@ p {
   @media (min-width: 768px) {
     .form__input {
       margin-top: .5em; } }
+@media (min-width: 1400px) {
+  .form {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-grow: 1; } }
 @media (min-width: 768px) {
   .form.button {
     margin-left: 0;
@@ -626,6 +702,9 @@ p {
   border-radius: 5px;
   border: none;
   text-align: left;
+  justify-content: center;
+  margin-right: .5em;
+  margin-left: .5em;
   text-transform: uppercase;
   color: white;
   text-align: center;
@@ -633,6 +712,11 @@ p {
   font-family: "Gothic A1", sans-serif;
   font-weight: 700;
   background: #51DDFC; }
+  @media (min-width: 768px) {
+    .btn--default {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1; } }
 
 .btn--success {
   width: 100%;
@@ -641,6 +725,9 @@ p {
   border-radius: 5px;
   border: none;
   text-align: left;
+  justify-content: center;
+  margin-right: .5em;
+  margin-left: .5em;
   text-transform: uppercase;
   color: white;
   text-align: center;
@@ -648,6 +735,11 @@ p {
   font-family: "Gothic A1", sans-serif;
   font-weight: 700;
   background: #63CC82; }
+  @media (min-width: 768px) {
+    .btn--success {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1; } }
 
 .btn--error {
   width: 100%;
@@ -663,6 +755,11 @@ p {
   font-family: "Gothic A1", sans-serif;
   font-weight: 700;
   background: #E4747A; }
+  @media (min-width: 768px) {
+    .btn--error {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1; } }
 
 .btn--warning {
   width: 100%;
@@ -678,6 +775,11 @@ p {
   font-family: "Gothic A1", sans-serif;
   font-weight: 700;
   background: #FD7756; }
+  @media (min-width: 768px) {
+    .btn--warning {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1; } }
 
 .btn--info {
   width: 100%;
@@ -693,5 +795,10 @@ p {
   font-family: "Gothic A1", sans-serif;
   font-weight: 700;
   background: #927BC1; }
+  @media (min-width: 768px) {
+    .btn--info {
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1; } }
 
 /*# sourceMappingURL=styles.css.map */

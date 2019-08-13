@@ -5,7 +5,7 @@
     margin: 25px auto;
     display: flex;
      @media (min-width: $break-m) {
-         width: 50%;
+         width: 80%;
          margin: 15px auto; 
      }
     }
@@ -16,8 +16,14 @@
     }
     &--logo {
         margin: 25px auto;
+        text-align: center;
+        display: block;
         @media (min-width: $break-m) {
-            margin: 0 auto 0 1em;
+            // margin: 0 auto 0 1em;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-right: auto;
+            display: flex;
             
         }
     }

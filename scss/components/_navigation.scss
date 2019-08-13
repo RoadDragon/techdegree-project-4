@@ -21,3 +21,10 @@
             width: 100%;
         }
 }
+
+.nav {
+    @media (min-width: $break-m) {
+        display: flex;
+        justify-content: right;
+    }
+}
