@@ -12,9 +12,10 @@
         color: inherit;
         padding: 5px 15px; 
         display: block;
+        text-align: center;
     }
-    &:hover,
-    &:first-child {
+      // &:first-child 
+    &:hover {
             color: white;
             background-color: $color-secondary;
             width: 100%;

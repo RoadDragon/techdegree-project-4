@@ -24,3 +24,9 @@
 //     }
 // }
             
+// Set context width for the grid
+// from: https://teamtreehouse.com/library/modular-css-with-sass/sass-grid-system/generating-column-classes
+
+@function g-context($g-col-width, $g-col-count, $g-gutter-width) {
+    $g-context: ($g-col-width * $g-col-count) + ($g-gutter-width *($g-col-count -1));
+}

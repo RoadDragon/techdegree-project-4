@@ -1,16 +1,28 @@
 // ----------------- FORM STYLES ---------------------
 
-.form__label--hidden,
-.form__input {
-    display: flex;
-    width: 90%;
-}
-.form__label--hidden {
-    display: none;
-}
-.form__input {
-    border: none;
-    border-bottom: $border;
-    margin: 2em auto 1em;
-    padding: .5em; 
+
+.form {
+    &__label--hidden,
+    &__input {
+        display: flex;
+        width: 90%;
+    }
+    &__label--hidden {
+        display: none;
+    }
+    &__input {
+        border: none;
+        border-bottom: $border;
+        margin: 2em auto 1em;
+        padding: .5em; 
+        @media (min-width: $break-m) {
+            margin-top: .5em;
+        }
+    }
+    &.button {
+        @media (min-width: $break-m) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    }
 }

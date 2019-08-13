@@ -7,8 +7,9 @@
     margin: .9em auto;
     font-family: $font-secondary;
     font-weight: 700;
-    @content;
-}
+    @content;  
+    }
+
 
 @mixin theme__colors {
     width: 100%;
@@ -17,4 +18,11 @@
     border-radius: 5px;
     border: none;
     text-align: left;
+    @content;
+    
+}
+
+@mixin grid-row-m {
+    flex-direction: row;
+    @content;
 }

@@ -49,3 +49,11 @@ $grid-colors: (
 
 // -------------------- BORDER -----------------------
 $border: 7px solid $color-secondary;
+
+// -------------------- GRID -----------------------
+// based on: https://teamtreehouse.com/library/modular-css-with-sass/sass-grid-system/generating-column-classes
+
+$g-col-width : 65px;
+$g-gutter-width: 20px;
+$g-col-count: 12;
+$g-cont-max-w: 1000px;

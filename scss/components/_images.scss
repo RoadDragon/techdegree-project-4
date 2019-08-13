@@ -4,6 +4,10 @@
     &--avatar {
     margin: 25px auto;
     display: flex;
+     @media (min-width: $break-m) {
+         width: 50%;
+         margin: 15px auto; 
+     }
     }
     &--frame {
     border: .5px solid lightgrey;

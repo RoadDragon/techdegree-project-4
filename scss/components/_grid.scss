@@ -20,7 +20,7 @@
 
     // NOTE: replace with media query mixin if aiming for exceeds
     @media (min-width: 768px) {
-      flex-direction: row;
+      @include grid-row-m;
       justify-content: space-between;
     }
   }
@@ -33,7 +33,7 @@
 
       // concatenate CSS selector, ie when $i = 1,
       // selector would be .grid__col--1
-      &--#{$i}.theme__colors {
+      &--#{$i} {
         @include theme__colors;
 
         // base styles applied to all grid columns 
@@ -47,16 +47,33 @@
 
           // base stlyes applied to all grid columns
           margin-top: 0;
+          flex-direction: row;
 
           // make column width a percentage of the column number / total columns
           flex-basis: #{$i / 12 * 100 + "%"} ;
+         
+          // &--4 {
+          //   flex-grow: 2;
+          // }
+          // &--8 {
+          //   flex-grow: 1;
+          // }
+
         }
       }
-      @each $grid-number, $bgcolor in $grid-colors {
-          &--#{$grid-number}.theme__colors {
-            background-color: $bgcolor;
-          }
-      }
+      // @each $grid-number, $bgcolor in $grid-colors {
+      //     &--#{$grid-number}.theme__colors {
+      //       background-color: $bgcolor;
+      //     }
+      // }
+      // from: https://teamtreehouse.com/library/modular-css-with-sass/sass-grid-system/generating-column-classes
+      // error message from closed curlies after $i. Sass wants a colon.
+      // $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
+      // $target: ($g-col-width * $i) + ($g-gutter-width * ($i-1));
+      
+      // &--{$i} {
+      //   width: percentage($target/$context);
+      // }
 
 
 //this was manually coded. I am leaving in so that you can see my process but managed to do it with an @each loop following this video: https://teamtreehouse.com/library/loop-through-data-in-a-map-with-each.
@@ -82,6 +99,13 @@
       //   background-color: $color-12-col;
       // }
     }
+    @each $grid-number, $bgcolor in $grid-colors {
+          &--#{$grid-number}.theme__colors {
+            background-color: $bgcolor;
+          }
+      }
+
+
   }
 }
 
