@@ -21,7 +21,7 @@
     // NOTE: replace with media query mixin if aiming for exceeds
     @media (min-width: 768px) {
       @include grid-row-m;
-      justify-content: space-between;
+      // justify-content: space-between;
     }
   }
 
@@ -31,82 +31,41 @@
     // loop through each column size
     @for $i from 1 through 12 {
 
-      // concatenate CSS selector, ie when $i = 1,
-      // selector would be .grid__col--1
-      &--#{$i} {
-        @include theme__colors;
+        // concatenate CSS selector, ie when $i = 1,
+        // selector would be .grid__col--1
+        &--#{$i} {
+          @include theme__colors;
 
-        // base styles applied to all grid columns 
-        // NOTE: could be converted to a placeholder, along with margin
-        // from the  media query
-        margin-top: 10px;
-        flex-basis: 100%;
-          
-        // NOTE: replace with media query mixin if aiming for exceeds
-        @media (min-width: 768px) {
+          // base styles applied to all grid columns 
+          // NOTE: could be converted to a placeholder, along with margin
+          // from the  media query
+          margin-top: 10px;
+          flex-basis: 100%;
+            
+          // NOTE: replace with media query mixin if aiming for exceeds
+          @media (min-width: 768px) {
 
-          // base stlyes applied to all grid columns
-          margin-top: 0;
-          flex-direction: row;
+            // base stlyes applied to all grid columns
+            margin-top: 0;
+            flex-direction: row;
 
 
-          // make column width a percentage of the column number / total columns
-          flex-basis: #{$i / 12 * 100 + "%"} ;
-         
-          // &--4 {
-          //   flex-grow: 2;
-          // }
-          // &--8 {
-          //   flex-grow: 1;
-          // }
-
+            // make column width a percentage of the column number / total columns
+            flex-basis: #{$i / 12 * 100 + "%"} ;
+          }
         }
-      }
-      // @each $grid-number, $bgcolor in $grid-colors {
-      //     &--#{$grid-number}.theme__colors {
-      //       background-color: $bgcolor;
-      //     }
-      // }
-      // from: https://teamtreehouse.com/library/modular-css-with-sass/sass-grid-system/generating-column-classes
-      // error message from closed curlies after $i. Sass wants a colon.
-      // $context: g-context($g-col-width, $g-col-count, $g-gutter-width);
-      // $target: ($g-col-width * $i) + ($g-gutter-width * ($i-1));
-      
-      // &--{$i} {
-      //   width: percentage($target/$context);
-      // }
-
-
-//this was manually coded. I am leaving in so that you can see my process but managed to do it with an @each loop following this video: https://teamtreehouse.com/library/loop-through-data-in-a-map-with-each.
-      // &--3.theme__colors {
-      //   background-color: $color-3-col;
-      // }
-      // &--4.theme__colors {
-      //   background-color: $color-4-col;
-      // }
-      // &--5.theme__colors {
-      //   background-color: $color-5-col;
-      // }
-      // &--6.theme__colors {
-      //   background-color: $color-6-col;
-      // }
-      // &--7.theme__colors {
-      //   background-color: $color-7-col;
-      // }
-      // &--8.theme__colors {
-      //   background-color: $color-8-col;
-      // }
-      // &--12.theme__colors {
-      //   background-color: $color-12-col;
-      // }
+        &--7.centered {
+        @media (min-width: $break-m) {
+          margin: 0 auto;
+        }
+      }     
     }
     @each $grid-number, $bgcolor in $grid-colors {
-          &--#{$grid-number}.theme__colors {
-            background-color: $bgcolor;
-          }
+      &--#{$grid-number}.theme__colors {
+        background-color: $bgcolor;
       }
-
-}
+    }
+  }
 }
 
 // targets all elements with classes that begin with grid__col
@@ -119,8 +78,7 @@
 
       // add grid gutter
       margin-left: 10px;
-
-  
+ 
     }
   }
 }

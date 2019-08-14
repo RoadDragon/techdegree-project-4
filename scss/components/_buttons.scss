@@ -8,47 +8,74 @@
 //     border: none;
 //     text-align: left;
 // }
-
-.btn--default {
+.btn {
+    @media (min-width: $break-m) {
+            justfy-content: space-around;
+             
+        } 
+&--default {
     @include theme__colors {
-        justify-content: center;
-
-        
-    };
+        justify-content: center; 
+        @media (min-width: $break-m) {
+        }      
+    }
     @include btn {
-        background: $color-default;
-        
+        background: $color-default; 
+
     }
 }
-
-.btn--success {
+&--default:not(.form.btn--default.theme__colors) {
+     @media (min-width: $break-m) {
+    width: 100px;
+    } 
+}
+&--success {
     @include theme__colors {
         justify-content: center;
-        // margin-right: .5em;
-        // margin-left: .5em;
-        // how do I create space between buttons?
+        @media (min-width: $break-m) {
+        }
     };
     @include btn {
         background: $color-success;
     }
 }
 
-.btn--error {
-    @include theme__colors;
+&--error {
+    @include theme__colors {
+        justify-content: center;
+        @media (min-width: $break-m) {
+            
+            // flex-grow: 0;
+        }      
+    };
     @include btn {
         background: $color-error;
     }
 }
-.btn--warning {
-    @include theme__colors;
+&--warning {
+    @include theme__colors {
+        justify-content: center;
+        @media (min-width: $break-m) {
+           
+        //    flex-grow: 0;
+        }       
+    };
     @include btn {
         background: $color-warning;
     }
 }
 
-.btn--info {
-    @include theme__colors;
+&--info {
+    @include theme__colors {
+        justify-content: center; 
+        @media (min-width: $break-m) {
+            
+            // flex-grow: 0;
+        }      
+    };
     @include btn {
         background: $color-info;
     }
+}
+
 }

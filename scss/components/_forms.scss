@@ -23,10 +23,11 @@
     margin: 0 4em;
     width: 100%;
     }
-    &.button {
+    &.button.theme__colors {
         @media (min-width: $break-m) {
         margin-left: 0;
         margin-right: 0;
+        width: 100% !important;
     }
     }
 }
