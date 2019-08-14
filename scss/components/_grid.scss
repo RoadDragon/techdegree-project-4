@@ -49,6 +49,7 @@
           margin-top: 0;
           flex-direction: row;
 
+
           // make column width a percentage of the column number / total columns
           flex-basis: #{$i / 12 * 100 + "%"} ;
          
@@ -105,8 +106,7 @@
           }
       }
 
-
-  }
+}
 }
 
 // targets all elements with classes that begin with grid__col
@@ -119,6 +119,8 @@
 
       // add grid gutter
       margin-left: 10px;
+
+  
     }
   }
 }

@@ -12,19 +12,20 @@
 .btn--default {
     @include theme__colors {
         justify-content: center;
-        margin-right: .5em;
-        margin-left: .5em;
+
+        
     };
     @include btn {
         background: $color-default;
+        
     }
 }
 
 .btn--success {
     @include theme__colors {
         justify-content: center;
-        margin-right: .5em;
-        margin-left: .5em;
+        // margin-right: .5em;
+        // margin-left: .5em;
         // how do I create space between buttons?
     };
     @include btn {

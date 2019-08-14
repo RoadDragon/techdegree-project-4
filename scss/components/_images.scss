@@ -1,18 +1,20 @@
 // ----------------- IMAGE STYLES ---------------------
 
 .img {
+     @media (min-width: $break-m) {
+        margin-left: 2.5em;
+     }
     &--avatar {
     margin: 25px auto;
     display: flex;
-     @media (min-width: $break-m) {
-         width: 80%;
-         margin: 15px auto; 
-     }
     }
     &--frame {
     border: .5px solid lightgrey;
     padding: 15px;
     width: 100%;
+    @media (min-width: $break-m) {
+        margin-left: 2.5em;
+     }
     }
     &--logo {
         margin: 25px auto;

@@ -37,9 +37,11 @@ ul {
     @media (min-width: $break-m) {
         display: flex;
         width: 100%;
-        justify-content: right;
-        padding-right: 4em;
+        justify-content: space-between;
+        align-items: right; 
+        // padding-right: 4em;
         padding-left: 2em;
+
     }
 
 }

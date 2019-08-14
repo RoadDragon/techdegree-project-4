@@ -1,5 +1,17 @@
 // ----------------- NAVIGATION STYLES ---------------------
 
+.nav {
+    @media (min-width: $break-m) {
+        display: flex;
+        justify-content: space-between;
+        text-align: right;
+        width: 100%;
+        align-items: flex-end;
+        align-self: flex-end;
+        padding-right: 2em;
+    }   
+}
+
 .nav__item {
     list-style: none;
     padding: 10px;
@@ -7,6 +19,11 @@
     background-color: $white;
     font-size: 1em;
     color: $color-primary-text;
+     @media (min-width: $break-m) {
+         text-align: right;
+         align-self: flex-end;
+         margin-left: 1.5em;
+     }
     a {      
         text-decoration: none;
         color: inherit;
@@ -22,9 +39,3 @@
         }
 }
 
-.nav {
-    @media (min-width: $break-m) {
-        display: flex;
-        justify-content: right;
-    }
-}
