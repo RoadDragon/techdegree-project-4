@@ -1,81 +1,57 @@
 
+// ----------------- BUTTON STYLES ---------------------
 
-// .theme__colors {
-//     width: 100%;
-//     font-size: .9em;
-//     padding: 15px;
-//     border-radius: 5px;
-//     border: none;
-//     text-align: left;
-// }
 .btn {
     @media (min-width: $break-m) {
-            justfy-content: space-around;
-             
+            justfy-content: space-around;             
         } 
-&--default {
-    @include theme__colors {
-        justify-content: center; 
-        @media (min-width: $break-m) {
-        }      
-    }
-    @include btn {
-        background: $color-default; 
-
-    }
-}
-&--default:not(.form.btn--default.theme__colors) {
-     @media (min-width: $break-m) {
-    width: 100px;
-    } 
-}
-&--success {
-    @include theme__colors {
-        justify-content: center;
-        @media (min-width: $break-m) {
+    &--default {
+        @include theme__colors {
+            justify-content: center;    
         }
-    };
-    @include btn {
-        background: $color-success;
+        @include btn {
+            background: $color-default; 
+        }
     }
-}
-
-&--error {
-    @include theme__colors {
-        justify-content: center;
+    &--default:not(.form.btn--default.theme__colors) {
         @media (min-width: $break-m) {
-            
-            // flex-grow: 0;
-        }      
-    };
-    @include btn {
-        background: $color-error;
+        width: 100px;
+        } 
     }
-}
-&--warning {
-    @include theme__colors {
-        justify-content: center;
-        @media (min-width: $break-m) {
-           
-        //    flex-grow: 0;
-        }       
-    };
-    @include btn {
-        background: $color-warning;
-    }
-}
 
-&--info {
-    @include theme__colors {
-        justify-content: center; 
-        @media (min-width: $break-m) {
-            
-            // flex-grow: 0;
-        }      
-    };
-    @include btn {
-        background: $color-info;
+    &--success {
+        @include theme__colors {
+            justify-content: center;
+        };
+        @include btn {
+            background: $color-success;
+        }
     }
-}
 
+    &--error {
+        @include theme__colors {
+            justify-content: center;     
+        };
+        @include btn {
+            background: $color-error;
+        }
+    }
+
+    &--warning {
+        @include theme__colors {
+            justify-content: center;    
+        };
+        @include btn {
+            background: $color-warning;
+        }
+    }
+
+    &--info {
+        @include theme__colors {
+            justify-content: center;     
+        };
+        @include btn {
+            background: $color-info;
+        }
+    }
 }

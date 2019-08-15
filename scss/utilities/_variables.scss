@@ -2,6 +2,8 @@
 $font-primary: 'Open Sans', sans-serif;
 $font-secondary: 'Gothic A1', sans-serif;
 
+// -------------------- LAYOUT ------------------------
+$max-width: 1100px;
 
 // ----------------- BREAKPOINTS ---------------------
 
@@ -27,16 +29,6 @@ $white: #ffffff;
 
 // Grid Column Colors
 
-//This first set is for coding each grid color manually in grid.scss
-// $color-12-col: #80E8D1;
-// $color-6-col: #3FABCA;
-// $color-4-col: #7EE6FD;
-// $color-3-col: #DEB2EE;
-// $color-5-col: #88D9A0;
-// $color-7-col: #EC9EA3;
-// $color-8-col: #FD9E85;
-
-//This second set is for the @each loop in grid.scss
 $grid-colors: (   
     '3': #DEB2EE,   
     '4': #7EE6FD,
