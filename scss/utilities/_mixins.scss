@@ -1,20 +1,20 @@
 // ----------------- MIXINS ---------------------
 
-@mixin btn {
-    text-transform: uppercase;
-    color: white;
-    text-align: center;
-    margin: .9em auto;
-    font-family: $font-secondary;
-    font-weight: 700;
-    @content; 
-    @media (min-width: $break-m) {
-    // width: 100px;
-    justify-content: space-around;
-    flex-basis: 0;
-    min-width: 150px;
-    } 
-}
+// ----- @mixin btn IS PERFECT BUT WANTED TO TRY @EXTENDS ----- 
+// @mixin btn {
+//     text-transform: uppercase;
+//     color: white;
+//     text-align: center;
+//     margin: .9em auto;
+//     font-family: $font-secondary;
+//     font-weight: 700;
+//     @content; 
+//     @media (min-width: $break-m) {
+//     justify-content: space-around;
+//     flex-basis: 0;
+//     min-width: 150px;
+//     } 
+// }
 
 
 @mixin theme__colors {
@@ -31,14 +31,34 @@
     } 
 }
 
-@mixin grid-row-m {
+@mixin med-break {
+    display: flex;
     flex-direction: row;
+    margin-top: 0;
+    margin-left: 10px;
     @content;
 }
+
+// @mixin grid-row-m {
+//     display: flex;
+//     flex-direction: row;
+//     @content;
+// }
 
 @mixin center {
     width: 90%;
     max-width: $max-width;
-margin-left: auto;
-margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin indented-text {
+    text-align: left;
+    margin-left: 20px;
+    width: 90%;
+}
+
+@mixin flexy {
+    display: flex;
+    justify-content: space-between;
 }

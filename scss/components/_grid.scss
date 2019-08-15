@@ -19,8 +19,9 @@
     
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
-      @include grid-row-m;
+    @media (min-width: $break-m) {
+      // @include grid-row-m;
+      @include med-break;
       
     }
   }
@@ -30,7 +31,7 @@
     // create grid columns dynamically
     // loop through each column size
     @for $i from 1 through 12 {
-
+      
         // concatenate CSS selector, ie when $i = 1,
         // selector would be .grid__col--1
         &--#{$i} {
@@ -43,11 +44,12 @@
           flex-basis: 100%;
             
           // NOTE: replace with media query mixin if aiming for exceeds
-          @media (min-width: 768px) {
 
+          @media (min-width: $break-m) {
+            @include med-break {
             // base stlyes applied to all grid columns
-            margin-top: 0;
-            flex-direction: row;
+            // margin-top: 0;
+            
 
 
             // make column width a percentage of the column number / total columns
@@ -68,18 +70,25 @@
     }
   }
 }
+ 
 
 // targets all elements with classes that begin with grid__col
-[class^=grid__col] {
+// [class^=grid__col] {
   // grid__col + grid__col, targets two sibling columns
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
-
-      // add grid gutter
-      margin-left: 10px;
+    @media (min-width: $break-m) {
+      @include med-break;
+      // add grid gutter - see mixin
+      margin-left: 10px; 
  
     }
+  }
+}
+.grid__col--7.theme__colors.centered {
+  @media (min-width: $break-m) {
+    @include center;
+    justify-content: center;
   }
 }

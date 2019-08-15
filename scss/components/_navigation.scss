@@ -2,8 +2,7 @@
 
 .nav {
     @media (min-width: $break-m) {
-        display: flex;
-        justify-content: space-between;
+        @include flexy;
         text-align: right;
         width: 100%;
         align-items: flex-end;

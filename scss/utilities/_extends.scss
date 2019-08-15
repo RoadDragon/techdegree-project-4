@@ -1,0 +1,13 @@
+%btn {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    margin: .9em auto;
+    font-family: $font-secondary;
+    font-weight: 700;
+    @media (min-width: $break-m) {
+    justify-content: space-around;
+    flex-basis: 0;
+    min-width: 150px;
+    } 
+}

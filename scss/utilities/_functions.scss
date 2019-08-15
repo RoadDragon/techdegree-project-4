@@ -1,31 +1,6 @@
 // ********************** FUNCTIONS ************************
 
-// $grid-bgs ('color-3-col',
-//             'color-4-col',
-//             'color-5-col',
-//             'color-6-col',
-//             'color-7-col',
-//             'color-8-col',
-//             'color-12-col');
-// @each $grid-bg in $grid-bgs {
-
-// }
- 
-//       $grid-numbers: ('&--3',
-//                 '&--4',
-//                 '&--5',
-//                 '&--6',
-//                 '&--7',
-//                 '&--8',
-//                 '&--12');
-// @each $grid-number in $grid-numbers {
-//     $grid-number-#{$grid-number} {
-//         background-color: ('$color-#{$grid-number}-col');
-//     }
-// }
-            
-// Set context width for the grid
-// from: https://teamtreehouse.com/library/modular-css-with-sass/sass-grid-system/generating-column-classes
+// https://teamtreehouse.com/library/modular-css-with-sass/sass-grid-system/generating-column-classes
 
 @function g-context($g-col-width, $g-col-count, $g-gutter-width) {
     $g-context: ($g-col-width * $g-col-count) + ($g-gutter-width *($g-col-count -1));

@@ -9,17 +9,9 @@
 body {
      font-family: $font-primary;
      color: $color-primary-text;
-    //       display: flex;
-    //       flex-wrap: wrap;
-    //  justify-content: center;
-    //  flex-grow: 1;
      margin: 2em;
-    //  padding: 0;
-    //  width: 100%;
-
 }
 
-//might need to remove this...
 .container {
     @include center;
 }
@@ -27,21 +19,15 @@ body {
 ul {
     padding: 0;
     @media (min-width: $break-m) {
-        display: flex;
+        @include flexy;
         width: 100%;
-        justify-content: space-between;
-        align-items: right; 
-        // padding-right: 4em;
         padding-left: 2em;
-
     }
-
-}
-
-ul li {
-        // margin: 15px 0;
+    li {
         border-radius: 5px;        
+    }
 }
+
 p {
     line-height: 1.7;
     text-align: left;

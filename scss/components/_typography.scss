@@ -1,10 +1,5 @@
 // ----------------- TYPOGRAPHY STYLES ---------------------
 
-// .card {
-//     @media (min-width: $break-m) {
-//         flex-grow: 2;
-// }
-// }
 
 .headline--secondary {
     font-weight: 200;
@@ -14,11 +9,9 @@
     }
 }
 .headline--primary {
-    text-align: left;
+    @include indented-text;
     color: $color-secondary;
-    margin-left: 20px;
     font-size: 1.8em;
-    width: 90%;
 }
 .link {
     color: $color-default;
@@ -26,9 +19,7 @@
     font-weight: bold;
 }
 .blockquote {
-    text-align: left;
-    margin-left: 20px;
-    width: 90%;
+    @include indented-text;
     padding-left: 20px;
     border-left: $border;
     border-radius: 5px;

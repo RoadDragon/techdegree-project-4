@@ -2,56 +2,95 @@
 // ----------------- BUTTON STYLES ---------------------
 
 .btn {
-    @media (min-width: $break-m) {
-            justfy-content: space-around;             
-        } 
     &--default {
+        @extend %btn;
+        background: $color-default;
         @include theme__colors {
             justify-content: center;    
-        }
-        @include btn {
-            background: $color-default; 
-        }
+        }   
     }
-    &--default:not(.form.btn--default.theme__colors) {
-        @media (min-width: $break-m) {
-        width: 100px;
-        } 
-    }
-
     &--success {
-        @include theme__colors {
-            justify-content: center;
-        };
-        @include btn {
-            background: $color-success;
-        }
-    }
-
-    &--error {
-        @include theme__colors {
-            justify-content: center;     
-        };
-        @include btn {
-            background: $color-error;
-        }
-    }
-
-    &--warning {
+        @extend %btn;
+        background: $color-success;
         @include theme__colors {
             justify-content: center;    
-        };
-        @include btn {
-            background: $color-warning;
-        }
+        }   
     }
-
-    &--info {
+    &--error {
+        @extend %btn;
+        background: $color-error;
         @include theme__colors {
-            justify-content: center;     
-        };
-        @include btn {
-            background: $color-info;
-        }
+            justify-content: center;    
+        }   
+    }
+    &--warning {
+        @extend %btn;
+        background: $color-warning;
+        @include theme__colors {
+            justify-content: center;    
+        }   
+    }
+    &--info {
+        @extend %btn;
+        background: $color-info;
+        @include theme__colors {
+            justify-content: center;    
+        }   
     }
 }
+
+// ----- CODE BELOW IS PERFECT BUT WANTED TO TRY @EXTENDS ----- 
+// .btn {
+//     @media (min-width: $break-m) {
+//             justfy-content: space-around;             
+//         } 
+//     &--default {
+//         @include theme__colors {
+//             justify-content: center;    
+//         }
+//         @include btn {
+//             background: $color-default; 
+//         }
+//     }
+//     &--default:not(.form.btn--default.theme__colors) {
+//         @media (min-width: $break-m) {
+//         width: 100px;
+//         } 
+//     }
+
+//     &--success {
+//         @include theme__colors {
+//             justify-content: center;
+//         };
+//         @include btn {
+//             background: $color-success;
+//         }
+//     }
+
+//     &--error {
+//         @include theme__colors {
+//             justify-content: center;     
+//         };
+//         @include btn {
+//             background: $color-error;
+//         }
+//     }
+
+//     &--warning {
+//         @include theme__colors {
+//             justify-content: center;    
+//         };
+//         @include btn {
+//             background: $color-warning;
+//         }
+//     }
+
+//     &--info {
+//         @include theme__colors {
+//             justify-content: center;     
+//         };
+//         @include btn {
+//             background: $color-info;
+//         }
+//     }
+// }
