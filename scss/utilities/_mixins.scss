@@ -31,6 +31,28 @@
     } 
 }
 
+// ***** Media Queries *****
+@mixin mq($break) {
+    @if $break == "small" {
+        @media (min-width: $break-xs) and (max-width: $break-m) {
+            @content;
+        }
+    }
+    @else if $break == "medium" {
+        @media (min-width: $break-m + 1) {
+            @content;
+        }
+    }
+    @else if $break == "large" {
+        @media (min-width: $break-l) {
+            @content;
+        }
+    }
+    @else {
+        @error "Sorry, no value retrieved for ''."
+    }
+}
+
 @mixin med-break {
     display: flex;
     flex-direction: row;
@@ -45,6 +67,7 @@
 //     @content;
 // }
 
+// ***** Center Content *****
 @mixin center {
     width: 90%;
     max-width: $max-width;
@@ -52,12 +75,14 @@
     margin-right: auto;
 }
 
+// ***** Indent Typography *****
 @mixin indented-text {
     text-align: left;
     margin-left: 20px;
     width: 90%;
 }
 
+// ***** Flexbox *****
 @mixin flexy {
     display: flex;
     justify-content: space-between;
