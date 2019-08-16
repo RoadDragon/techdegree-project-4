@@ -25,11 +25,12 @@
     border: none;
     text-align: left;
     @content;
-        @media (min-width: $break-m) {
+    @include mq(medium) {
         display: flex;
         flex-direction: row;
-    } 
-}
+        } 
+    }
+
 
 // ***** Media Queries *****
 @mixin mq($break) {
@@ -61,12 +62,6 @@
     @content;
 }
 
-// @mixin grid-row-m {
-//     display: flex;
-//     flex-direction: row;
-//     @content;
-// }
-
 // ***** Center Content *****
 @mixin center {
     width: 90%;
@@ -86,4 +81,5 @@
 @mixin flexy {
     display: flex;
     justify-content: space-between;
+
 }

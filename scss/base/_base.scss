@@ -18,7 +18,7 @@ body {
 
 ul {
     padding: 0;
-    @media (min-width: $break-m) {
+    @include mq(medium) {
         @include flexy;
         width: 100%;
         padding-left: 2em;

@@ -4,7 +4,7 @@
 .headline--secondary {
     font-weight: 200;
     text-align: left;
-    @media (min-width: $break-m) {
+    @include mq(medium) {
         margin-top: 0;
     }
 }

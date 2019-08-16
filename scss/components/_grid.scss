@@ -15,15 +15,12 @@
   &__row {
     padding: 1em 0;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: $break-m) {
-      // @include grid-row-m;
-      @include med-break;
-      
-    }
+    @include mq(medium) {
+      @include med-break;   
+      }
   }
 
   // .grid__col
@@ -32,62 +29,50 @@
     // loop through each column size
     @for $i from 1 through 12 {
       
-        // concatenate CSS selector, ie when $i = 1,
-        // selector would be .grid__col--1
-        &--#{$i} {
-          @include theme__colors;
+      // concatenate CSS selector, ie when $i = 1,
+      // selector would be .grid__col--1
+      &--#{$i} {
+        @include theme__colors;
 
-          // base styles applied to all grid columns 
-          // NOTE: could be converted to a placeholder, along with margin
-          // from the  media query
-          margin-top: 10px;
-          flex-basis: 100%;
-            
-          // NOTE: replace with media query mixin if aiming for exceeds
+        // base styles applied to all grid columns 
+        // NOTE: could be converted to a placeholder, along with margin
+        // from the  media query
+        margin-top: 10px;
+        flex-basis: 100%;
+          
+        // NOTE: replace with media query mixin if aiming for exceeds
 
-          @media (min-width: $break-m) {
-            @include med-break {
-            // base stlyes applied to all grid columns
-            // margin-top: 0;
-            
-
-
-            // make column width a percentage of the column number / total columns
+        @include mq(medium) {
+          @include med-break {
+          // base stlyes applied to all grid columns
+          // margin-top: 0;
+          // make column width a percentage of the column number / total columns
             flex-basis: #{$i / 12 * 100 + "%"} ;
           }
+        }  
+      }
+      @each $grid-number, $bgcolor in $grid-colors {
+        &--#{$grid-number}.theme__colors {
+          background-color: $bgcolor;
         }
-        &--7.centered {
-        @media (min-width: $break-m) {
-          @include center;
-          justify-content: center;
-        }
-      }     
-    }
-    @each $grid-number, $bgcolor in $grid-colors {
-      &--#{$grid-number}.theme__colors {
-        background-color: $bgcolor;
       }
     }
   }
-}
- 
 
 // targets all elements with classes that begin with grid__col
 // [class^=grid__col] {
   // grid__col + grid__col, targets two sibling columns
   & + & {
-
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: $break-m) {
-      @include med-break;
-      // add grid gutter - see mixin
+    @include mq(medium) {
+      // add grid gutter 
       margin-left: 10px; 
  
     }
   }
 }
 .grid__col--7.theme__colors.centered {
-  @media (min-width: $break-m) {
+  @include mq(medium) {
     @include center;
     justify-content: center;
   }

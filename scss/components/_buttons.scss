@@ -7,7 +7,7 @@
         background: $color-default;
         @include theme__colors {
             justify-content: center;    
-        }   
+        }
     }
     &--success {
         @extend %btn;
